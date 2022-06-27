@@ -16,7 +16,7 @@ A statically generated Xero blog website. This uses a custom Next.js and Wordpre
 - [Tailwind.CSS](https://tailwindcss.com/)
 - [WPGraphQL](https://www.wpgraphql.com/)
 
-#### GraphiQL
+#### GraphiQL 
 
 The [WPGraphQL](https://www.wpgraphql.com/) plugin also gives you access to a GraphQL IDE directly from your WordPress Admin, allowing you to inspect and play around with the GraphQL API.
 
