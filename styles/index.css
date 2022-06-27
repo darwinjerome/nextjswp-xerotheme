@@ -1,6 +1,25 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+/* @media (min-width: 768px){
+  .md\:text-8xl {
+    font-family: 'National-Light';
+    color: #565656;
+    font-size: 46px!important;
+    line-height: 50px;
+    font-weight: 300!important;
+  }
+}
+
+h3 a{
+  color: #212121;
+  font-size: 25px;
+  font-family: 'National-Light';
+  line-height: 28px;
+    
+} */
+
+
 
 /* Start purging... */
 @tailwind components;
@@ -10,6 +29,11 @@
 
 /* Start purging... */
 @tailwind utilities;
+
+.bg-accent-1{
+  background-color: #45474d;
+  color: #7b7e87;
+}
 /* Stop purging. */
 
 /* Your own custom utilities */
@@ -101,4 +125,22 @@
 
 .wp-block-media-text {
   @apply grid grid-cols-2 gap-4;
+}
+
+.headerTitle{
+  border-bottom: 1px solid #e6e6e6;
+}
+
+footer .footer-top{
+  border-bottom: 1px solid #5e6065;
+}
+
+footer a.button-footer{
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 3em;
+  background: #57c40a;
+  font: 18px National, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #fff;
+  vertical-align: middle;
 }

@@ -8,7 +8,7 @@ export default function CoverImage({ title, coverImage, slug }) {
       width={2000}
       height={1000}
       alt={`Cover Image for ${title}`}
-      src={coverImage?.node.sourceUrl}
+      src={coverImage?.node.sourceUrl ? coverImage?.node.sourceUrl : "https://xeroblogwp.devt/wp-content/uploads/2019/01/image1.png"}
       className={cn('shadow-small', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}

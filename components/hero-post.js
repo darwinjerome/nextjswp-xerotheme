@@ -10,20 +10,30 @@ export default function HeroPost({
   excerpt,
   author,
   slug,
+  heroImg = coverImage?.node.sourceUrl ? coverImage?.node.sourceUrl : "https://xeroblogwp.devt/wp-content/uploads/2019/01/image1.png"
 }) {
   return (
     <section>
-      <div className="mb-8 md:mb-16">
+      <div className="mb-4 md:mb-4" style={{
+                    backgroundImage: "url(" + heroImg + ")",
+                    width: "100%",
+                    height: "70vh",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                  }}>
+                  
+      </div>
+      {/* <div className="mb-8 md:mb-16">
         {coverImage && (
           <CoverImage title={title} coverImage={coverImage} slug={slug} />
         )}
-      </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+      </div> */}
+      <div className="md:grid md:grid-cols-1 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
           <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
             <Link href={`/posts/${slug}`}>
               <a
-                className="hover:underline"
+                className="text-grey hover:text-sky-400"
                 dangerouslySetInnerHTML={{ __html: title }}
               />
             </Link>
@@ -42,4 +52,4 @@ export default function HeroPost({
       </div>
     </section>
   )
-}
+} ()=>{console.log(coverImage)}
